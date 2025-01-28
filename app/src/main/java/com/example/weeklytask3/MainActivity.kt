@@ -26,6 +26,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -86,6 +87,7 @@ fun LoginForm(modifier: Modifier = Modifier) {
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Password
             ),
+            visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 8.dp, end = 8.dp)
@@ -98,12 +100,7 @@ fun LoginForm(modifier: Modifier = Modifier) {
         ) {
             Text(text = "Submit")
         }
-        Text(
-            text = stringResource(R.string.instructions),
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 16.dp, top = 16.dp)
-        )
+
     }
 }
 
