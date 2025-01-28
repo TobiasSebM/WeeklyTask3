@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weekly Task 3</string>
+    <string name="login_form_title">Login Form</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="instructions">Please enter your username and password.</string>
+</resources>
